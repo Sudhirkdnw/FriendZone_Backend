@@ -30,7 +30,9 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Http;
 use Faker\Factory as Faker;
 
-include "./app/Class/AgoraDynamicKey/RtcTokenBuilder.php";
+require_once app_path('Class/AgoraDynamicKey/RtcTokenBuilder.php');
+
+
 
 class SettingsController extends Controller
 {
